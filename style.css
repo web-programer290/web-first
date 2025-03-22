@@ -1,0 +1,222 @@
+img{
+    width: 200px;
+}
+body{
+    padding: 0px;
+    background-color: rgb(21, 158, 101);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+b {
+    display: flex;
+    flex-direction:row;
+}
+
+d {
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    font-size: 20px;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid #000000;
+    border-radius: 32px;
+}
+
+a:hover {
+    box-shadow: 0 2px 6px ;
+    color:#000000;
+}
+
+a:visited {
+    color:#000000;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0px;
+    color: black;
+    background-color: greenyellow;
+}
+
+section {
+    padding: 20px;
+    font-size: 26px;
+    margin: 20px;
+}
+
+
+#buy-now {
+    display: flex;
+    flex-direction: column;
+}
+
+.slider{
+    display: flex;
+    flex-direction:row;
+}
+
+.slide-img {
+    position: absolute;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+input{
+    background-color: aqua;
+    margin: 10px;
+    padding: 10px;
+    width: 40vw;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#formAgreement{
+    width: 1vw;
+}
+
+input::placeholder {
+    text-align: center;
+    font-size: 20px;
+    color: #000000;
+}
+
+button {
+    background-color: aqua;
+    border-radius: 10px;
+    height: 6vw;
+    width: 40vw;
+    font-size: 30px;
+}
+
+#popUp {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: fixed;
+    height: 80%;
+    width: 80%;
+    top: 10%;
+    left: 10%;
+    background-color: #0805a3b9;
+    border-radius: 10px;
+    
+}
+
+.big{
+    font-size: 63px;
+    color: white;
+    text-align: center;
+}
+
+.small {
+    font-size: 37px;
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+}
+
+#saleBotton {
+
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 20px 0 0 20px ;  
+    border: 3px solid black;
+    padding: 10px;
+    background-color: rgb(206, 202, 0);
+    color:rgb(255, 0, 0)
+    
+}
+
+footer {
+    box-shadow: 0px -8px 15px grey;
+    text-align: center;
+    background-color: rgb(162, 255, 240);
+    padding: 20px;
+    
+    font-size: 30px;
+}
+
+#read {
+    display: none;
+    color:black
+}
+
+#readen {
+    display: contents;
+    color: blue;
+    text-decoration: underline;
+}
+
+#readen1 {
+    display: none;
+    color: blue;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px){
+    header {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 0px;
+        color: black;
+        background-color: greenyellow;
+    }
+
+    b {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        padding: 0px;
+        font-size: 26px;
+        margin: 0;
+    }
+
+    #saleBotton {
+        top: 10px;
+        bottom: auto;
+    }
+
+    input {
+        padding: 10px;
+        margin: 8px;
+        width: 90%;
+    }
+
+    input::placeholder {
+        font-size: 7vw;
+    }
+
+    #formAgreement {
+        width: 5%;
+    }
+
+    button {
+        width: 90%;
+        height: 10vw;
+    }
+
+}
